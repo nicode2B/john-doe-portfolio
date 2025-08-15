@@ -1,0 +1,52 @@
+:root { --blue-accent: #2d6cdf; }
+
+* { box-sizing: border-box; }
+body {
+  font-family: 'Nunito Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* NAV */
+.navbar-brand { font-weight: 600; letter-spacing: .5px; }
+.nav-link { text-transform: uppercase; }
+.nav-link:hover { text-decoration: underline; }
+.nav-link.active { font-weight: 700; text-decoration: underline; }
+
+/* Titres + barre bleue */
+.section-title { text-align: center; margin: 2.5rem 0 1rem; }
+.section-title h1 { font-weight: 600; }
+.section-title .bar { width: 140px; height: 6px; background: var(--blue-accent); margin: .75rem auto 0; border-radius: 3px; }
+.section-subtitle { text-align: center; color:#666; margin-bottom: 2rem; }
+
+/* HERO */
+.hero {
+  position: relative; min-height: 75vh; display: grid; place-items: center; color: #fff;
+  text-align: center; background-position:center; background-size: cover; background-repeat:no-repeat;
+}
+.hero::after { content:''; position:absolute; inset:0; background: rgba(0,0,0,.35); }
+.hero > .hero-content { position: relative; z-index: 1; }
+.hero h1 { font-weight: 700; font-size: clamp(2rem, 4vw, 4rem); }
+.hero h2 { font-weight: 400; font-size: clamp(1.1rem, 2.2vw, 2rem); }
+
+/* Boutons */
+.btn { transition: filter .2s ease, box-shadow .2s ease; }
+.btn:hover { filter: brightness(.92); }
+.btn-lighten:hover { filter: brightness(1.08); }
+
+/* Cards hover */
+.card.card-hover { transition: background-color .2s ease, box-shadow .2s ease; }
+.card.card-hover:hover { background:#efefef; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+
+/* Progress bars */
+.progress { height: 12px; background:#e9ecef; }
+.progress-bar { font-size:.75rem; }
+
+/* Footer */
+.site-footer { background:#212529; color:#dfe3e6; padding: 2.5rem 0; }
+.site-footer a { color:#dfe3e6; text-decoration:none; }
+.site-footer a:hover { font-weight: 600; text-decoration: none; }
+.social a { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; margin-right:.35rem; transition: filter .2s ease; }
+.social a:hover { filter: brightness(10); }
+
+/* Utilitaires */
+.hr-blue { height: 3px; background: var(--blue-accent); border: 0; opacity: 1; }
+.border-blue { border-color: var(--blue-accent) !important; }
