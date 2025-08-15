@@ -25,8 +25,8 @@ export default function LegalAccordion(){
         <Accordion.Header>Crédits</Accordion.Header>
         <Accordion.Body>
           <p>Ce site a été réalisé par John Doe, étudiant au Centre Européen de Formation.</p>
-          <p>Les images proviennent de <a href="https://pixabay.com/" target="_blank" rel="noopener nofollow">Pixabay</a>.</p>
-          <p>Le favicon est fourni par <a href="https://www.flaticon.com/free-icons/john-doe" target="_blank" rel="noopener nofollow">Flaticon</a>.</p>
+          <p>Les images utilisées sur ce site sont libres de droits et ont été obtenue sur le site  <a href="https://pixabay.com/" target="_blank" rel="noopener nofollow">Pixabay</a>.</p>
+          <p>La favicon de ce site a été est fournie par <a href="https://www.flaticon.com/free-icons/john-doe" target="_blank" rel="noopener nofollow">Flaticon</a>.</p>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

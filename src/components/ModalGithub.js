@@ -3,7 +3,7 @@ import { Modal, Image, ListGroup } from 'react-bootstrap';
 export default function ModalGithub({ show, onHide, data }) {
   return (
     <Modal show={show} onHide={onHide} size="lg" centered backdrop="static">
-      <Modal.Header closeButton closeLabel="Fermer">
+      <Modal.Header closeButton aria-label="Fermer"> {/* Changement ici */}
         <Modal.Title>Mon profil GitHub</Modal.Title>
       </Modal.Header>
       <Modal.Body className="bg-dark text-light">
@@ -13,7 +13,7 @@ export default function ModalGithub({ show, onHide, data }) {
             <ListGroup variant="flush" className="text-light">
               <ListGroup.Item className="bg-dark text-light">
                 <i className="bi bi-person me-2" />
-                <a href={data?.html_url} target="_blank" rel="noopener nofollow" className="text-reset text-decoration-underline">
+                <a href={data?.html_url} target="_blank" rel="noopener noreferrer" className="text-reset text-decoration-underline">
                   {data?.name || data?.login}
                 </a>
               </ListGroup.Item>
